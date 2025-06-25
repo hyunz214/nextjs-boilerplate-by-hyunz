@@ -6,7 +6,7 @@ type ButtonProps = ComponentProps<"button"> & {
 };
 
 export const Button = (props: ButtonProps) => {
-  const { className, variant = "primary", ...other } = props;
+  const { className, variant = "primary", children, ...other } = props;
 
   return (
     <button
@@ -17,6 +17,8 @@ export const Button = (props: ButtonProps) => {
         className,
       )}
       {...other}
-    />
+    >
+    {children}
+    </button>
   );
 };
