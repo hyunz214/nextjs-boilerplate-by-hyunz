@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div className="mt-8">
               <pre className="inline-block rounded-md bg-secondary px-4 py-2 text-sm font-mono text-secondary-foreground">
-                <code>npx create-next-app -e https://github.com/your-username/your-boilerplate my-app</code>
+                <code>npx create-next-app -e https://github.com/hyunz214/nextjs-boilerplate-by-hyunz.git my-boilerplate</code>
               </pre>
             </div>
           </div>
