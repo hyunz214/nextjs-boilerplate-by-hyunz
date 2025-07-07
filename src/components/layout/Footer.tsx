@@ -9,12 +9,6 @@ export function Footer() {
           <Link href="https://github.com/hyunz214" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
             GitHub
           </Link>
-          <Link href="#" className="hover:text-foreground">
-            Twitter
-          </Link>
-          <Link href="#" className="hover:text-foreground">
-            LinkedIn
-          </Link>
         </div>
       </div>
     </footer>
