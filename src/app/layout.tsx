@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { ReactQueryProvider } from '@/providers/react-query-provider';
+import { ReactQueryProvider } from '@/providers/ReactQueryProvider';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { Toast } from '@/components/ui/Toast';
 
 export const metadata: Metadata = {
 	title: 'Next Boilerplate by hyunz',
@@ -19,6 +20,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 						<main className="flex-1">{children}</main>
 					</div>
 					<Footer />
+					<Toast />
 				</ReactQueryProvider>
 			</body>
 		</html>

@@ -1,27 +1,23 @@
-import { useEffect, useState } from 'react';
+'use client';
+import { useToast } from '@/hooks/useToast';
+import clsx from 'clsx';
 
-interface ToastProps {
-  message: string;
-  duration?: number;
-  onClose?: () => void;
-}
+export const Toast = () => {
+	const { message, type, show } = useToast();
 
-export const Toast = ({ message, duration = 3000, onClose }: ToastProps) => {
-	const [visible, setVisible] = useState(true);
-
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			setVisible(false);
-			onClose?.();
-		}, duration);
-
-		return () => clearTimeout(timer);
-	}, [duration, onClose]);
-
-	if (!visible) return null;
+	if (!show || !message) return null;
 
 	return (
-		<div className="fixed bottom-4 right-4 bg-black text-white px-4 py-2 rounded shadow-md animate-fade-in">
+		<div 
+			className={clsx(
+				'fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded shadow text-white z-50 transition-opacity duration-300',
+				{
+					'bg-gray-800': type === 'default',
+					'bg-green-600': type === 'success',
+					'bg-red-600': type === 'error',
+				},
+			)}
+		>
 			{message}
 		</div>
 	);
