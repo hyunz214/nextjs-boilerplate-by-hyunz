@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Providers } from './providers';
+import { ReactQueryProvider } from '@/providers/react-query-provider';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
@@ -13,13 +13,13 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang="ko" suppressHydrationWarning>
 			<body className='bg-white text-gray-900'>
-				<Providers>
+				<ReactQueryProvider>
 					<Header />  
 					<div className="relative flex min-h-screen flex-col">
 						<main className="flex-1">{children}</main>
 					</div>
 					<Footer />
-				</Providers>
+				</ReactQueryProvider>
 			</body>
 		</html>
 	);
