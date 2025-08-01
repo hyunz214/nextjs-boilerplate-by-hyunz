@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 
 export type LabelProps = LabelHTMLAttributes<HTMLLabelElement>
 
-const Label = ({ className, ...props }: LabelProps) => {
+export const Label = ({ className, ...props }: LabelProps) => {
 	return (
 		<label
 			className={cn('text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70', className)}
@@ -11,6 +11,5 @@ const Label = ({ className, ...props }: LabelProps) => {
 		/>
 	);
 };
-Label.displayName = 'Label';
 
-export { Label };
+Label.displayName = 'Label';

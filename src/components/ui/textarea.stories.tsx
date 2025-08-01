@@ -15,12 +15,8 @@ export default meta;
 type Story = StoryObj<typeof Textarea>;
 
 export const Default: Story = {};
-export const WithText: Story = {
-	args: { value: 'Hello world' },
-};
-export const Disabled: Story = {
-	args: { disabled: true },
-};
+export const WithText: Story = { args: { value: 'Hello world' } };
+export const Disabled: Story = { args: { disabled: true } };
 export const WithLabel: Story = {
 	render: (args) => (
 		<div className="grid w-full max-w-sm items-center gap-1.5">

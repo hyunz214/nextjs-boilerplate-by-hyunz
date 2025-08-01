@@ -15,12 +15,8 @@ export default meta;
 type Story = StoryObj<typeof Input>;
 
 export const Default: Story = {};
-export const Disabled: Story = {
-	args: { disabled: true },
-};
-export const WithValue: Story = {
-	args: { value: 'Hello World' },
-};
+export const Disabled: Story = { args: { disabled: true } };
+export const WithValue: Story = {	args: { value: 'Hello World' } };
 export const WithLabel: Story = {
 	render: (args) => (
 		<div className="grid w-full max-w-sm items-center gap-1.5">
