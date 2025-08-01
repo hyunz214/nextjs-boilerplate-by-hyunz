@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export function QuickStartGuide() {
+const QuickStartGuide = () => {
   return (
     <section className="bg-muted py-20">
       <div className="container max-w-3xl text-center">
@@ -35,4 +35,6 @@ export function QuickStartGuide() {
       </div>
     </section>
   );
-}
+};
+
+export default QuickStartGuide;

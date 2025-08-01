@@ -11,9 +11,9 @@ const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
       <p className="text-muted-foreground">{description}</p>
     </div>
   );
-}
+};
 
-export function FeaturesSection() {
+const FeaturesSection = () => {
   const features = [
     { icon: '⚡️', title: '빠른 시작', description: '몇 분 안에 개발 환경을 설정하고 코딩을 시작하세요.' },
     { icon: '💅', title: 'Tailwind CSS', description: '유틸리티 우선 CSS로 빠르고 유연한 스타일링.' },
@@ -35,4 +35,6 @@ export function FeaturesSection() {
       </div>
     </section>
   );
-}
+};
+
+export default FeaturesSection;

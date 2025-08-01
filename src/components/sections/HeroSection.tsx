@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 
-export function HeroSection() {
+const HeroSection = () => {
   return (
     <section className="relative flex flex-1 items-center justify-center bg-gradient-to-br from-primary/10 to-background py-20 text-center">
       <div className="container max-w-4xl space-y-6 px-4">
@@ -27,4 +27,6 @@ export function HeroSection() {
       </div>
     </section>
   );
-}
+};
+
+export default HeroSection;

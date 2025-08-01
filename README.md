@@ -6,8 +6,10 @@ Next.js의 App Router를 기반으로, 유지보수성, 확장성, 그리고 개
 
 
 사용 기술 스택
-- Next.js
-- Typescript
-- tailwind
-- storybook
-- eslint
+- Next.js + TypeScript
+- ESLint
+- TailwindCSS
+- Zustand
+- React Hook Form
+- TanStack Query
+- Storybook
