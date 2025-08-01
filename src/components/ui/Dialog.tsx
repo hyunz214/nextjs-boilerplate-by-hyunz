@@ -1,7 +1,7 @@
 'use client';
 import { ReactNode, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { useDialog } from '@/hooks/use-dialog';
+import { useDialog } from '@/hooks/useDialog';
 
 interface DialogProps {
 	children: ReactNode;
