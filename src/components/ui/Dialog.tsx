@@ -1,7 +1,7 @@
 'use client';
 import { ReactNode, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { useDialog } from '@/hooks/useDialog';
+import { useDialogStore } from '@/stores/dialogStore';
 
 interface DialogProps {
 	children: ReactNode;
@@ -10,7 +10,7 @@ interface DialogProps {
 }
 
 export const Dialog = ({ children, title, description }: DialogProps) => {
-	const { isOpen, closeDialog } = useDialog();
+	const { isOpen, closeDialog } = useDialogStore();
 
 	// ESC 키로 모달 닫기
 	useEffect(() => {

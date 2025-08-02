@@ -1,9 +1,10 @@
 'use client';
-import { useToast } from '@/hooks/useToast';
+
 import clsx from 'clsx';
+import { useToastStore } from '@/stores/toastStore';
 
 export const Toast = () => {
-	const { message, type, show } = useToast();
+	const { message, type, show } = useToastStore();
 
 	if (!show || !message) return null;
 
