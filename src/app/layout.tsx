@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ReactQueryProvider } from '@/providers/ReactQueryProvider';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+import Header from '@/components/common/layout/Header';
+import Footer from '@/components/common/layout/Footer';
 import { Toast } from '@/components/ui/Toast';
 
 export const metadata: Metadata = {
